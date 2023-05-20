@@ -1,0 +1,31 @@
+
+.gradient-text {
+    background: linear-gradient(-45deg, #F300FA, #E48726);
+    background-size: 200% 200%;
+    animation: gradient-bg 2s ease infinite;
+    background-clip: text;
+}
+
+.gradient-text:hover {
+    animation: gradient-bg 0.5s ease infinite;
+	background-clip: unset;
+	color: white;
+}
+
+.gradient-bg {
+    background: linear-gradient(-45deg, #F300FA, #E48726);
+    background-size: 200% 200%;
+    animation: gradient-bg 2s ease infinite;
+}
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 25%;
+	}
+	50% {
+		background-position: 50% 25%;
+	}
+	100% {
+		background-position: 0% 25%;
+	}
+}
